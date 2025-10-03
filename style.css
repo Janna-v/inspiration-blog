@@ -1,0 +1,319 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --font-family: sans-serif;
+}
+
+body{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
+}
+
+nav{
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    top:0px;
+    z-index: 99999;
+    background-color: white;
+    box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.688);
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    padding: 25px;
+}
+
+.nav-link{
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 5px;
+    color: black;
+    flex-direction: row;
+    font:  var(--font-family);
+}
+
+.nav-link:hover{
+    transform: scale(1.05);
+    transition: 0.1s;
+    font-weight: bolder;
+    
+}
+
+.box{
+    width: 100%;
+    background:linear-gradient(rgba(0, 0, 0, 0.384)) ,url(carosello2.jpg);
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+figure p{
+    color: white;
+    font-size: 20px;
+}
+h1{
+    
+    margin-top: 50px;
+    color: white;
+    font-size: 60px;
+}
+
+h2{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    font-family: var(--font-family);
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+main{
+    margin-bottom: 150px;
+    
+}
+
+
+.box-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box-cards-allArticles{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    
+}
+
+.card{
+    width: 200px;
+    height: 300px;
+    border: 1px solid black;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.688);
+    
+}
+
+.card:hover{
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.788);
+}
+
+
+h3{ 
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    margin-left: 2px;
+    margin-right: 2px;
+    position: relative;
+    top:-10px
+}
+
+.card p {
+    position: relative;
+    bottom: 10px;
+    margin: 0px;;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    font-size: 15px;
+    padding: 4px;
+    text-align: justify;
+}
+
+.card img {
+    height: 130px; 
+    width: 100%;
+
+}
+.badge{
+    width: 80px;
+    border-radius: 10px;
+    border: 1px solid rgb(42, 93, 165);
+    background:rgba(21, 62, 120, 0.653) ;
+    color: white;
+    z-index: 40;
+    position: relative;
+    bottom: 120px ;
+    left: 5px;
+}
+
+.click-to-read{
+    width: 80px;
+    position: relative;
+    left: 110px;
+    bottom: 5px;
+    background-color: transparent ;
+    border: none;
+    
+}
+
+.click-to-read:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+article a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: black;
+    font-size: 14px;
+}
+
+footer{
+    background-color: rgba(169, 169, 169, 0.079);
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.11);
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.box-contacts{
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 300px;
+    flex-direction: column;
+    font-size: 18px;
+}
+
+.fa-brands{
+    margin-top: 20px;
+    padding: 5px;
+    font-size: 30px;
+}
+
+.pageDetail-article-section{
+    display: flex;
+}
+
+.pageDetail-image{
+    background-image: url(card1.jpg);
+    background-size: cover; 
+    background-position: center center;
+    height: 400px;
+    width: 39%;
+    background-repeat: no-repeat;
+    margin-left: 30px;
+    box-shadow: 5px 5px 15px 0px;
+    margin-right: 50px;
+}
+
+.pageDetail-txt{
+    width: 50%;
+}
+
+.pageDetail-txt p{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.pageDetail-txt h3{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.badge-detailPage{
+    width: 80px;
+    border-radius: 10px;
+    border: 1px solid rgb(42, 93, 165);
+    background:rgba(21, 62, 120, 0.653) ;
+    color: white;
+    position: relative;
+    bottom: px ;
+    left: 5px;
+}
+
+.retour-to{
+    border: 1px solid black;
+    padding: 10px 20px;
+    border-radius: 18px;
+    background: linear-gradient(120deg, darkblue, cyan);
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    
+    
+}
+
+@media screen and (max-width: 578px){
+    
+    .nav-item {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+    }
+    
+    .nav-link{
+        padding: 3px;
+    }
+    h1{
+        margin-left: 15px;
+    }
+    
+    .pageDetail-image{
+        background-image: url(card1.jpg);
+        background-size: cover; 
+        background-position: center center;
+        height: 400px;
+        width: 100%;
+        background-repeat: no-repeat;
+        margin-left: 0px;
+        box-shadow: 5px 5px 15px 0px;
+    }
+    
+    .pageDetail-article-section{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .pageDetail-txt{
+        margin-top: 30px;
+        width: 100%;
+    }
+    
+    .pageDetail-txt p{
+        margin-left: 5px;
+        margin-right: 5px;
+        
+    }
+    
+    .pageDetail-txt h3 {
+        white-space: normal; 
+        margin-top: 20px;
+        text-align: center;
+    }
+    
+}
